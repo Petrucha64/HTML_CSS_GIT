@@ -11,9 +11,45 @@ h1 {
     border-bottom: 2px solid #333366;
     padding-bottom: 10px;
 }
+h2 {
+    color: #333370; /* Dark blue color */
+    border-bottom: 2px solid #333366;
+    padding-bottom: 5px;
+}
 
 /* Style for the paragraph */
 p {
     color: #555555; /* Gray color */
     line-height: 1.6;
+}
+.profile-photo {
+    width: 150px;         /* šířka obrázku */
+    height: 150px;        /* výška obrázku */
+    object-fit: cover;    
+    border-radius: 50%;   
+    shape-outside: circle(50%);
+    clip-path: circle(50%);   /* aby se obrázek opravdu ořízl do kruhu */
+    border: 3px solid #333366; 
+    float: right;              /* umožní obtékání */
+    margin: 0 20px 20px 0;    /* mezery kolem obrázku */
+    display: block;   
+    
+}
+  nav {
+  background-color: #f0f0f0;   /* barva pozadí menu */
+  padding: 10px;               /* vnitřní odsazení */
+  position: sticky;            /* přilepení při scrollování */
+  top: 0;                      /* drží se u horního okraje */
+  z-index: 1000;               /* aby bylo nad obsahem */
+}
+
+/* Odkazy v menu */
+nav a {
+  margin-right: 15px;          /* mezera mezi odkazy */
+  text-decoration: none;       /* odstraní podtržení */
+  color: #333;                 /* barva textu */
+}
+
+nav a:hover {
+  color: #0077cc;              /* barva při najetí myší */
 }
